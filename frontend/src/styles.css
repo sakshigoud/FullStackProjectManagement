@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #1e88ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.nav-link {
+  @apply text-white text-sm md:text-base hover:text-gray-100 transition-colors;
+}
+
+.navbar-wrapper {
+  @apply w-full bg-primary text-white shadow;
+}
+
+.navbar-inner {
+  @apply max-w-7xl mx-auto flex items-center justify-between py-4 px-6;
+}
+
+.newsletter-bar {
+  @apply flex items-center gap-4;
+}
+
+.newsletter-input-wrapper {
+  @apply flex items-center bg-white rounded-md overflow-hidden border border-white;
+}
+
+.newsletter-input {
+  @apply px-4 py-2 text-sm md:text-base outline-none w-48 md:w-64;
+}
+
+.newsletter-btn {
+  @apply bg-primary text-white px-4 py-2 text-sm md:text-base font-medium hover:bg-blue-600 transition-colors;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-semibold text-gray-900 mb-6 text-center;
+}
+
+.section-subtitle {
+  @apply text-gray-500 text-center max-w-2xl mx-auto mb-10;
+}
+
+.card-grid {
+  @apply grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.project-card {
+  @apply bg-white rounded-xl shadow-md overflow-hidden flex flex-col;
+}
+
+.project-card-image {
+  @apply h-44 w-full object-cover;
+}
+
+.project-card-body {
+  @apply p-4 flex flex-col flex-1;
+}
+
+.project-card-title {
+  @apply text-lg font-semibold text-blue-600 mb-1;
+}
+
+.project-card-desc {
+  @apply text-sm text-gray-600 mb-4 flex-1;
+}
+
+.project-card-footer {
+  @apply mt-auto;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-md bg-primary text-white text-sm font-medium hover:bg-blue-600 transition-colors;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-md border border-primary text-primary text-sm font-medium hover:bg-primary hover:text-white transition-colors;
+}
+
+.client-card {
+  @apply bg-white rounded-2xl shadow-md p-6 pt-10 relative flex flex-col items-center text-center;
+}
+
+.client-avatar-wrapper {
+  @apply w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md absolute -top-8 left-1/2 -translate-x-1/2;
+}
+
+.client-avatar {
+  @apply w-full h-full object-cover;
+}
+
+.client-name {
+  @apply text-blue-600 font-semibold mt-4;
+}
+
+.client-role {
+  @apply text-xs text-gray-500 mb-3;
+}
+
+.client-text {
+  @apply text-sm text-gray-600;
+}
+
+.table-wrapper {
+  @apply bg-white rounded-xl shadow-md overflow-hidden;
+}
+
+.table-base {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.table-head-row {
+  @apply bg-gray-50;
+}
+
+.table-head-cell {
+  @apply px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.table-row {
+  @apply bg-white even:bg-gray-50;
+}
+
+.table-cell {
+  @apply px-4 py-3 text-sm text-gray-700 align-top;
+}
+
+.modal-backdrop {
+  @apply fixed inset-0 bg-black/40 flex items-center justify-center z-40;
+}
+
+.modal-panel {
+  @apply bg-white rounded-xl shadow-xl max-w-lg w-full mx-4 p-6;
+}
+
+.input-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.input-base {
+  @apply w-full rounded-md border border-gray-300 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-primary;
+}
+
+.textarea-base {
+  @apply w-full rounded-md border border-gray-300 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-primary min-h-[100px] resize-y;
+}
+
+.sidebar {
+  @apply h-screen bg-white shadow-md flex flex-col w-60;
+}
+
+.sidebar-link {
+  @apply flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-primary transition-colors;
+}
+
+.sidebar-link-active {
+  @apply bg-blue-50 text-primary;
+}
+
+.admin-shell {
+  @apply min-h-screen bg-gray-50 flex;
+}
+
+.admin-main {
+  @apply flex-1 flex flex-col;
+}
+
+.admin-main-inner {
+  @apply flex-1 p-4 md:p-6 max-w-6xl w-full mx-auto;
+}
+
+.auth-page {
+  @apply min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100;
+}
+
+.auth-card {
+  @apply bg-white rounded-2xl shadow-xl p-8 w-full max-w-md;
+}
+
+.auth-title {
+  @apply text-2xl font-semibold text-gray-900 mb-2;
+}
+
+.auth-subtitle {
+  @apply text-sm text-gray-500 mb-6;
+}
+
+.loader {
+  @apply h-10 w-10 border-4 border-blue-200 border-t-primary rounded-full animate-spin;
+}
+
+.empty-state {
+  @apply text-sm text-gray-500 text-center py-10;
+}
