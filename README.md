@@ -23,6 +23,19 @@ A modern full-stack web application with a public landing page and admin panel f
 - **Protected Routes** for admin operations
 - **Input Validation** and error handling
 
+## Screen Shots
+
+<img width="1885" height="916" alt="image" src="https://github.com/user-attachments/assets/705dff3b-831c-43a9-b0cc-8317d2449f6c" />
+
+
+<img width="1852" height="944" alt="image" src="https://github.com/user-attachments/assets/b1b4b3ad-9460-451f-8a57-98277ef838f0" />
+
+
+<img width="1899" height="930" alt="image" src="https://github.com/user-attachments/assets/48d2d2eb-931f-429b-8999-bb5b8d30b5d3" />
+
+
+
+
 ## 📁 Project Structure
 
 ```
